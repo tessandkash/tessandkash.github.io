@@ -1,0 +1,10 @@
+---
+layout: info
+title: Details
+billboard_class: billboard-details
+---
+{% if site.context == "san" %}
+  {% include san_details.html %}
+{% else %}
+  {% include phl_details.html %}
+{% endif %}

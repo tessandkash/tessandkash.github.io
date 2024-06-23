@@ -1,0 +1,67 @@
+ <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top {% if page.invisible_nav %} navbar-hidden-top {% else %} top-nav-collapse {% endif %}" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="/">
+                  T & K
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="{% if page.url == '/' %}active{% endif %}">
+                        <a href="/"> Our Story</a>
+                    </li>
+                    <li class="{% if page.url == '/celebrations/' %}active{% endif %}">
+                        <a href="/celebrations">Schedule</a>
+                    </li>
+                    <!-- <li class="{% if page.url == '/people/' %}active{% endif %}">
+                        <a href="/people">People</a>
+                    </li> -->
+                    <li class="{% if page.url == '/details/' %}active{% endif %}">
+                        <a href="/details">Details</a>
+                    </li>
+                    <!-- <li class="{% if page.url == '/rsvp/' %}active{% endif %}">
+                        <a href="/rsvp">RSVP</a>
+                    </li> -->
+                      <!-- <li class="notification-link">
+                         <a href="#" class="ga-email-nav" data-toggle="modal" data-target="#rsvp-modal">
+                           RSVP
+                         </a>
+                      </li> -->
+                    
+                    {% if site.faq[site.context] %}
+                      <li class="{% if page.url == '/faq/' %}active{% endif %}">
+                        <a href="/faq">FAQ</a>
+                      </li>
+                    {% endif %}
+                    <!-- {% if site.guide[site.context] %}
+                      <li class="{% if page.url == '/faq/' %}active{% endif %}">
+                        <a href="/guide">City Guide</a>
+                      </li>
+                    {% endif %} 
+                    <li class="{% if page.url == '/contact/' %}active{% endif %}">
+                      <a href="/contact">Contact</a>
+                    </li> -->
+                    <!-- {% if site.context == "phl" %}
+                        <li class="notification-link">
+                          <a href="#" class="ga-email-nav" data-toggle="modal" data-target="#subscribe-modal">
+                            <i class="fa fa-exclamation-circle notification-link--icon"></i>
+                            RSVP
+                          </a>
+                        </li>
+                    {% endif %} -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>

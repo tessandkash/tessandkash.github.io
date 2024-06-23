@@ -1,0 +1,24 @@
+---
+layout: info
+title: FAQ
+billboard_class: billboard-faq
+---
+
+{% if site.faq[site.context] %}
+  <section class="container content-section text-center">
+    <!-- <h1>FAQ</h1> -->
+    <div class="row">
+      <p>
+        Please check back after receiving your formal invitation as more FAQ will be available!
+      </p>
+      <div class="col-lg-8 col-lg-offset-2 text-left">
+        <dl>
+          {% for one in site.faq[site.context] %}
+            <dt><h3>{{ one.question }}</h3></dt>
+            <dd><p>{{ one.answer }}</p></dd>
+          {% endfor %}
+        </dl>
+      </div>
+    </div>
+  </section>
+{% endif %}

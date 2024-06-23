@@ -1,0 +1,156 @@
+# Site settings
+title: Kash & Tess
+email: kashbari@gmail.com
+url: http://tessandkash.github.io
+description: "We're getting married and can't wait to celebrate with you!"
+baseurl: ""
+host: 127.0.0.1 # listen to LAN connections
+gems:
+  - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Possible values
+# 'san' - San Diego
+# 'phl' - Philadelphia
+context: phl
+
+locations:
+  Benites: &benites_location
+    location_name: Benites Residence
+    address1: 314 Saint Vincent St
+    address2: Philadelphia, PA, 19111
+    coordinates: 42.243377,-87.878189
+    google_maps_url: https://www.google.com/maps/place/211+N+Savanna+Ct,+Lake+Forest,+IL+60045/@42.244292,-87.8793387,17z/data=!3m1!4b1!4m2!3m1!1s0x880f951707bd6ae1:0xee4caaaf8316d979
+  Bari: &bari_location
+    location_name: Bari Residence
+    address1: 6036 Rancho Diegueno Rd
+    address2: Rancho Santa Fe, CA, 92091
+    coordinates: 42.243377,-87.878189
+    google_maps_url: https://www.google.com/maps/place/211+N+Savanna+Ct,+Lake+Forest,+IL+60045/@42.244292,-87.8793387,17z/data=!3m1!4b1!4m2!3m1!1s0x880f951707bd6ae1:0xee4caaaf8316d979
+  our: &our_location
+    location_name: Kash and Tess Residence
+    address1: 5245 Caminito Providencia
+    address2: Rancho Santa Fe, CA, 92091
+    coordinates: 32.9822931,-117.2056432
+    google_maps_url: https://www.google.com/maps/place/5245+Caminito+Providencia,+Rancho+Santa+Fe,+CA+92067/@32.9822931,-117.2056432,17z/data=!3m1!4b1!4m6!3m5!1s0x80dc0846a9489be3:0xad2192412bdb306c!8m2!3d32.9822931!4d-117.2030629
+  venue: &venue_location
+    location_name: Glen Foerd on the Delaware
+    address1: 5001 Grant Ave.
+    address2: Philadelphia, PA 19114
+    coordinates: 40.05164, -74.97881
+    google_maps_url: https://www.google.com/maps/place/Glen+Foerd/@40.0516471,-74.9836849,17z/data=!3m1!4b1!4m6!3m5!1s0x89c6b14dd69ec9cd:0x9fd69b6e20dc3d03!8m2!3d40.0516472!4d-74.9788194
+  afterparty: &after_party_location
+    location_name: Unknown
+    address1: ---- Unknown Ave
+    address2: Philadelphia, PA -----
+    coordinates: 41.891932,-87.611652
+    google_maps_url: https://www.google.com/maps/place/Navy+Pier/@41.8813917,-87.616019,15z/data=!4m5!1m2!2m1!1snavy+pier!3m1!1s0x880e2b4d91f12edb:0xd0acdb96b088a4dc
+  hotel: &hotel_location
+    location_name: Holiday Inn Express Philadelphia
+    address1: 1329 Bristol Pike
+    address2: Bensalem, PA 19020
+    coordinates: 40.054889,-75.0531933
+    google_maps_url: https://www.google.com/maps/place/Holiday+Inn+Express+Philadelphia+NE+-+Bensalem,+an+IHG+Hotel/@40.054889,-75.0531933,12z/data=!4m13!1m2!2m1!1shotels+near+glen+foerd+on+the+delaware!3m9!1s0x89c14cb596e54917:0x75c2f9368e806c80!5m2!4m1!1i2!8m2!3d40.070672!4d-74.9638941!15sCiZob3RlbHMgbmVhciBnbGVuIGZvZXJkIG9uIHRoZSBkZWxhd2FyZZIBBWhvdGVs4AEA
+
+hotels:
+  phl:
+    # - name: Holiday Inn Express Philadelphia
+    #   phone: +1-215-245-5222
+    #   reserve_url: Insert Reserv URL Here
+    #   rate: $---/night
+    #   description: Approximately 1.5 miles from venue
+    #   <<: *hotel_location
+
+events:
+  phl:
+    - name: Arrival
+      date: Saturday, April 19, 2025
+      time: 4:00pm
+      attire: Semiformal
+      description: Arrival at the front of Glen Foerd mansion. Once you arrive, please make your way to the wedding ceremony seating.
+      transportation: Transportation will be provided from the hotel to Glen Foerd. Valet parking will be available to guests arriving in their own vehicles.
+      <<: *venue_location
+    - name: Wedding Ceremony
+      date: Saturday, April 19, 2025
+      time: 4:30pm
+      attire: Semiformal
+      description: Wedding ceremony will take place outside on grass in front of River, weather permitting. Otherwise, the ceremony will take place inside the mansion.
+      transportation:
+      <<: *venue_location
+    - name: Cocktail Hour
+      date: Saturday, April 19, 2025
+      time: 5:30pm
+      attire: Semiformal
+      description: Cocktail Hour at the front of Glen Foerd mansion. Feel free to explore the mansion and the art museum while enjoying the music and cocktail hour ammenities.
+      transportation:
+      <<: *venue_location
+    - name: Reception
+      date: Saturday, April 19, 2025
+      time: 6:30pm-10pm
+      attire: Semiformal
+      description: The reception will occur in the tent nearby the mansion. Dinner and open bar will be served along with live music and dancing.
+      transportation: At the end of the event, transportation will be provided from Glen Foerd back to the hotel
+      <<: *venue_location
+  san:
+    - name: Reception
+      date: Saturday, May , 2025
+      time: 7pm
+      attire: Semiformal
+      description: Reception hosted by Bari Family.
+      transportation:
+      <<: *bari_location
+
+faq:
+  phl:
+    - question: Will the wedding be located entirely at Glen Foerd?
+      answer: |
+        Yes, from ceremony to reception, all will be located at Glen Foerd. Please view our section on <a href="/details/#getting-around">Details</a> to see how to get around!
+    - question: Food? I have a pretty serious allergy to [insert allergen here], can you accomodate me?
+      answer: 
+        Please let us know of any allergens in advance on the RSVP so that we can inform the caterer and ensure the safety of all guests! In particular, note any nut allergies!
+    - question: I'm from our of town, where can I stay?
+      answer: |
+        For those guests coming from out of town, we will have a room block at a nearby hotel and will be providing transportation to and from Glen Foerd
+    - question: What is the dress code?
+      answer: |
+        The Ceremony and Reception will be Semiformal. Weather permitting, the ceremony will take place outside, so please dress accordingly with Philadelphia's tempremental mid-April weather.
+
+        <strong>Ladies</strong>: Please wear your formal evening wear! If you've got a full-length gown hanging in the back of your closet, this would be a great opportunity to break it out. No color restrictions here (except maybe not white - don't want to be confused for the bride!).
+        <strong>Gentlemen</strong>: Any semiformal attire is welcome whether it is dress shirt and pants (black tie optional) or an Indian Sherwani.
+    #- question: Will children be allowed?
+    #- answer: Undecided!
+    - question: How to RSVP and by when?
+    - answer: You can RSVP by both mail and on-line. RSVP will be available once formal invitations are sent out (sometime around early 2025).
+    - question: Will parking be available?
+    - answer: Yes! Parking is very easy at Glen Foerd and there is also a valet service.
+    - question: Will the wedding be indoors or outdoors?
+    - answer: We would love to have our ceremony outdoors by the Delaware River if weather permits. Otherwise, it will take place inside the historic mansion. The reception will be hosted inside a tent right next to the mansion. If the ceremony is outdoors, please wear appropriate attire for a typical mid-April day in Philly.
+    - question: What is the weather like for mid-April in Philly?
+    - answer: In general, you can expect high 50s/low 60s for mid April however it can truly be unpredictable this time of year. Throw in a random beautiful 80-degree day that makes SoCal jealous, followed by flurries the following day. 
+    - question: What food will be served?
+    - answer: There will be hors D'oeuvre at cocktail hour followed by a sit down plated dinner at reception and lastly dessert. Please let us know any dietary allergies on the RSVP or reach out directly!
+    - question: Honeymoon?
+    - answer: Undecided!
+
+  san: false
+
+guide:
+  phl:
+    Explore:
+      - title: Independence Hall and the Liberty Bell
+        description: Considered USA's birthplace, check out the famous historic sites in Philadelphia! For an educational day trip, I recommend visiting Independence Hall, a UNESCO World Heritage site, followed by the Liberty Bell which is nearby. 
+      - title: Philadelphia Art Museum (+ the 'Rocky Steps')
+        description: The cultural heart of Philadelphia and a must see if visiting. The museum is at the end of Benjamin Franklin Parkway and carries a vast collection of artwork. The exterior of the building is beautiful as well and you can usually point out the tourists who are running up the steps like they're Rocky (it's okay, go be cheesy for a day!). Don't forget to check out the Rocky statue as well! 
+      - title: Benjamin Franklin Parkway and its many Museums 
+        description: Want to see more exhibitions? There are so many more museums to explore in Philadelphia, such as The Franklin Institute (every Philly kid knows of the giant heart), the Barnes Foundation, and the Academy of Natural Sciences. Aside from checking out museums, you simply can walk and admire the outside scenery. Philly is a really walkable city.
+      - title: Reading Terminal Market
+        description: A very large and old historic food hall, the Reading Terminal Market offers dozens and dozens of diverse food vendors to get your grub on or take with you.
+      - title: Avenue of the Arts
+        description: Located along Broad Street in between City Hall and South Street, the Avenue of the Arts features many of the city's performing art venues. Also, it's very Instagram-worthy to have your photo taken on the road divider with an awesome view of City Hall right behind. 
+      - title: Eat a Pretzel and get some Water Ice
+        description: Try another native Philly delicacy! Nothing better than a soft pretzel with some water ice to wash it down. Local chains are easy to find such as Philly Pretzel Factory + Rita's Water Ice. Be sure to check out the diverse and highly praised food/drink scene in Philly too! Admittedly, we aren't too familiar with the food scene to give recommendations! 
+      
+
