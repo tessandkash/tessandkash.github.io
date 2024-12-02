@@ -1,0 +1,11 @@
+<!--DELETE ME-->
+---
+layout: info
+title: RSVP
+billboard_class: billboard-ramp-walk
+---
+{% if site.context == "san" %}
+  {% include san_rsvp.html %}
+{% else %}
+  {% include phl_rsvp.html %}
+{% endif %}

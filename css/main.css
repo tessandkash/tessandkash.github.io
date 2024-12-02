@@ -7,59 +7,60 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+@media only screen and (min-width:390px) {
+  body {
+      width: 100%;
+      height: 100%;
+      font-family: Ubuntu, serif; /*"Helvetica Neue",Helvetica,Arial,sans-serif;*/ /* Cardo,"Helvetica Neue",Helvetica,Arial,sans-serif*/
+      color: #404040;
+      background-color: #fff;
+  }
 
-body {
-    width: 100%;
-    height: 100%;
-    font-family: Ubuntu, serif; /*"Helvetica Neue",Helvetica,Arial,sans-serif;*/ /* Cardo,"Helvetica Neue",Helvetica,Arial,sans-serif*/
-    color: #404040;
-    background-color: #fff;
+  html {
+      width: 100%;
+      height: 100%;
+  }
+
+  h1{
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;/* "Pacifico", cursive;*/
+    /* font-weight: bolder; */
+    font-size: 500%;
+    letter-spacing: 3px;
+  }
+  h2{
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;/* "Pacifico", cursive;*/
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 35px;
+    font-family: "Ubuntu", cursive;
+    font-weight: 100;
+    letter-spacing: 1px;
+  }
+
+
+  p {
+      margin: 0 0 25px;
+      font-size: 18px;
+      line-height: 1.5;
+  }
+
+  ul {
+      font-size: 18px;
+      margin: 0 0 25px;
+  }
 }
 
-html {
-    width: 100%;
-    height: 100%;
-}
-
-h1{
-  margin: 0 0 35px;
-  text-transform: uppercase;
-  font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;/* "Pacifico", cursive;*/
-  /* font-weight: bolder; */
-  font-size: 500%;
-  letter-spacing: 3px;
-}
-h2{
-  margin: 0 0 35px;
-  text-transform: uppercase;
-  font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;/* "Pacifico", cursive;*/
-  font-weight: 100;
-  letter-spacing: 1px;
-}
-
-h3,
-h4,
-h5,
-h6 {
-  margin: 0 0 35px;
-  font-family: "Ubuntu", cursive;
-  font-weight: 100;
-  letter-spacing: 1px;
-}
-
-
-p {
-    margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-ul {
-    font-size: 18px;
-    margin: 0 0 25px;
-}
-
-@media(min-width:767px) {
+@media only screen and (min-width:390px) {
     p {
         margin: 0 0 35px;
         line-height: 1.6;
@@ -102,7 +103,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    color: #404040; /*#fff;*/
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -180,7 +181,7 @@ a:focus {
 }
 
 .navbar a {
-  color: #fff;
+  color: #404040;
 }
 .navbar-custom.top-nav-collapse {
     border-bottom: 3px solid #AFA63D;
@@ -204,7 +205,7 @@ a:focus {
     background-position: center center;
 }
 
-@media(min-width:992px) {
+@media only screen and (min-width:390px) {
   /*
     Only allow background-attachment: fixed for desktop-ish sizes
     https://twitter.com/paul_irish/status/306818591196602368
@@ -230,7 +231,7 @@ a:focus {
     font-size: 12px;
 }
 
-@media(min-width:767px) {
+@media only screen and (min-width:390px) {
     .intro {
         padding: 0;
     }
@@ -361,7 +362,7 @@ a:focus {
     margin-bottom: 50px;
 }
 
-@media(min-width:767px) {
+@media only screen and (min-width:390px) {
     .map {
         height: 600px;
     }
@@ -466,7 +467,7 @@ dd {
   font-size: 40px;
 }
 
-@media(min-width:767px) {
+@media only screen and (min-width:390px) {
   .billboard {
     height: 600px;
   }
@@ -480,7 +481,7 @@ dd {
   }
 }
 
-@media(min-width:992px) {
+@media only screen and (min-width:390px) {
   /*
     Only allow background-attachment: fixed for desktop-ish sizes
     https://twitter.com/paul_irish/status/306818591196602368
@@ -519,7 +520,7 @@ dd {
 }
 
 .billboard-celebrations {
-  /*background-position: center bottom 5%; */ /* center bottom 300px*/
+  background-position: center bottom 300px; /* center bottom 5%*/
   background-position-x: center;
   background-position-y: bottom 100x;
   width: 100%;
@@ -534,7 +535,7 @@ dd {
 
 
 .billboard-details {
-  background-position: center bottom 200px;
+  background-position: center center 300px;
   background-color: #fff;
   background-image: url(../img/details.jpg);
 }
@@ -544,7 +545,25 @@ dd {
   background-image: url(../img/people.jpg);
 }
 
-@media(in-width:767px) {
+@media (max-width: 430px) {
+  .make-me-fit {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .make-me-fit h2 small {
+    white-space: nowrap;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* width: 100%;  */
+    /* float: inline-end; */
+    /* display: inline-block; */
+    float: inline-start;
+  }
+
+}
+
+@media only screen and (min-width:430px) {
   .billboard-wall {
     background-position: center -170px;
   }
@@ -602,7 +621,10 @@ dd {
 }
 
 .notification-link .notification-link--icon {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 2px;
 }
 
 .notification-link.notify .notification-link--icon {
@@ -665,7 +687,7 @@ dd {
   font-size: 40px;
 }
 
-@media(min-width:484px) {
+@media only screen and (min-width:245px) {
   .sideboard {
     height: 1300px;
   }
@@ -679,7 +701,7 @@ dd {
   }
 }
 
-@media(min-width:496px) {
+@media only screen and (min-width:245px) {
   /*
     Only allow background-attachment: fixed for desktop-ish sizes
     https://twitter.com/paul_irish/status/306818591196602368
@@ -694,7 +716,7 @@ dd {
   background-image: url(../img/celebrations-side.jpg);
 }
 
-@media(in-width:767px) {
+@media only screen and (min-width:430px) {
 
   .sideboard-celebrations-side {
     width: 50%;

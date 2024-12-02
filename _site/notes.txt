@@ -1,0 +1,13 @@
+Run app:
+
+jekyll serve
+bundle _2.4.22_ update jekyll-watch
+bundle _2.4.22_ install
+
+
+
+cd git_repo/kash-tess-wedding/
+bundle _2.4.22_
+bundle _2.4.22_ exec jekyll serve
+
+

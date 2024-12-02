@@ -13,9 +13,12 @@ billboard_class: billboard-celebrations
       <!-- <div class="row col-lg-offset-{% cycle 2, 3 %} col-lg-5 col-sm-6">
 
       </div> -->
-      <section class="make-me-fit col-lg-offset-{% cycle 2, 3 %} {% cycle 'content-left', 'content-right' %}">
+      <!-- <section class="col-lg-offset-{% cycle 2, 3 %} {% cycle 'content-left', 'content-right' %}">
 
-          <div class="col-lg-12 col-lg-offset-{% cycle 0, 6 %}"> <!-- col-sm-offset-2 col-sm-8-->
+        <div class="col-lg-12 col-lg-offset-{% cycle 0, 6 %}">  -->
+      <section class="col-lg-offset-2 "> <!--content-left-->
+
+          <div class="col-lg-12 col-lg-offset-0"> <!-- col-sm-offset-2 col-sm-8-->
             <h2>
               {{ event.name }}
               <br>
@@ -56,5 +59,6 @@ billboard_class: billboard-celebrations
 
     {% endfor %}
   </section>
-  <section class="sideboard sideboard-celebrations-side"></section>
+  <script src="/js/celebration.js"></script>
+  <!-- <section class="sideboard sideboard-celebrations-side"></section> -->
 </div>
